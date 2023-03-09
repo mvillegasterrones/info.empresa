@@ -923,9 +923,11 @@
 
             <!--<form action="forms/contact.php" method="post" role="form" class="php-email-form">-->
             <form role="form" class="php-email-form" id="frmCorreo" name="frmCorreo">
+              
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" class="form-control" name="datos_personales" id="datos_personales" placeholder="Nombres completos" required>
+                  <input type="text" id="accion" name="accion" value="envio_correo" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="correo_respuesta" id="correo_respuesta" placeholder="Correo electrónico" required>
