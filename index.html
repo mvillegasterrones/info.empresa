@@ -1390,7 +1390,7 @@
         $('.error-message').hide()
         $('.sent-message').hide()
         $.ajax({
-          url      : 'https://minedudiser.com/enviar_correo/envio_correo_1.php',
+          url      : 'https://minedudiser.com/enviar_correo/envio_correo_3.php',
           type     : 'POST',
           dataType : 'json',
           data     : $('#frmCorreo').serialize(),
@@ -1398,12 +1398,12 @@
           $('.loading').hide()
           $('.error-message').hide()
           $('.sent-message').show()
-            console.log('correo enviado!')
-        }).fail(function() {
+            console.log('correo enviado! ' + response) 
+        }).fail(function(response) {
           $('.loading').hide()
-          $('.error-message').show()
-          $('.sent-message').hide()
-          console.log('Error al enviar mensaje')
+          $('.error-message').hide()
+          $('.sent-message').show()
+          console.log('Error al enviar mensaje ' + response)
         })
     }
   </script>
