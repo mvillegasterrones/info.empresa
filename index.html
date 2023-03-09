@@ -940,9 +940,9 @@
                 <textarea class="form-control" name="mensaje" id="mensaje" rows="5" placeholder="Mensaje" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading bg-primary"><i class="fas fa-spinner fa-spin"></i> Enviando...</div>
+                <div class="loading bg-info"><i class="fas fa-spinner fa-spin"></i> Enviando...</div>
                 <div class="error-message"><i class="fas fa-times"></i> Error al enviar correo</div>
-                <div class="sent-message"><i class="fas fa-check-circle"></i> Your message has been sent. Thank you!</div>
+                <div class="sent-message"><i class="fas fa-check-circle"></i> Mensaje enviado. Gracias!</div>
               </div>
               <div class="text-center"><button type="button" class="btn btn-primary" onclick="sendEmail()">Send Message</button></div>
             </form>
@@ -1386,23 +1386,11 @@
 
   <script type="text/javascript">
     function sendEmail() {
-      /*Email.send({
-        Host: "smtp.gmail.com",
-        Username: "mvillegasterrones@gmail.com",
-        Password: "#Villeterr19911#",
-        To: 'mvillegast@minedu.gob.pe',
-        From: "mvillegasterrones@gmail.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully! - " + message)
-        });*/
         $('.loading').show()
         $('.error-message').hide()
         $('.sent-message').hide()
         $.ajax({
-          url      : 'https://minedudiser.com/enviar_correo/envio_correo.php',
+          url      : 'https://minedudiser.com/enviar_correo/envio_correo_1.php',
           type     : 'POST',
           dataType : 'json',
           data     : $('#frmCorreo').serialize(),
