@@ -118,7 +118,7 @@
             <div class="text-center text-lg-start">
               <a href="#about" class="btn-get-started scrollto">Get Started</a>
             </div>-->
-            <h1>Creamos <span>Tu Website</span> a La Medida</h1>
+            <h1>Nuestros Servicios a Tu Medida: <br><span class="auto-type">.</span></h1>
             <h2>Somos un equipo de diseñadores talentosos que crean aplicaciones web, móviles y desktop a tu medida</h2>
             <div class="text-center text-lg-start">
               <a href="#about" class="btn-get-started scrollto">Empecemos</a>
@@ -1413,9 +1413,16 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <!--Send Mail -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <script type="text/javascript">
+    var typed = new Typed('.auto-type', {
+      strings: ['Creamos tu WebSite','Aplicaciones Web','Aplicaciones Móviles','Intranet','Soporte Técnico','Planos Geográficos', 'Asesoría Personalizada'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    })
     function sendEmail() {
         $('.loading').show()
         $('.error-message').hide()
