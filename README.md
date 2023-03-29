@@ -1,6 +1,6 @@
 # info.empresa
 
-## Sistema de la empresa J&M Soluciones
+## WebSite de la empresa J&M Soluciones
 
 ### Soluciones Tecnológicas
 ---
